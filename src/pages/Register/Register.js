@@ -25,7 +25,7 @@ export default function Register(props) {
             taiKhoan: Yup.string().required('Account is required'),
             matKhau: Yup.string().required('Password is required').min(6, 'Minimum length of password is 6').max(32, 'Maximum length of password is 32'),
             email: Yup.string().email('Invalid email').required('Email is required'),
-            soDt: Yup.string().matches(/^[0-9]+$/, 'Phone number only contains digits'),
+            soDt: Yup.string().matches(/^[0-9]+$/, 'Phone number only contains digits').required('Phone number is required'),
             hoTen: Yup.string().required('Full name is required')
         }),
         onSubmit: (values) => {
