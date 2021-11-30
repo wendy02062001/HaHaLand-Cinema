@@ -34,7 +34,7 @@ export const dangKyAction = (thongTinNguoiDung) => {
                 data:thongTinNguoiDung
             });
             history.push('/login'); // chuyen ve trang chu
-            alert('Đăng kí tài khoản thành công ! Xin mời đăng nhập !');
+            alert('Your account has been successfully registed! Please login to use our website ... ');
 
         }catch (err) {
             alert(err.response.data);

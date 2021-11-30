@@ -316,7 +316,11 @@ export default function ListFilm(props) {
         <div className="listfilms mb-4">
             <div className="container">
                 <ul className="nav nav-pills pills-tab-movie mb-4" id="pills-tab-listfilm" role="tablist">
-                    <li className="nav-item" role="presentation">
+                    <li className="nav-item" role="presentation" onClick={
+                        () => {
+                            dispatch(getApiFilmAction("GP01"))
+                        }
+                    }>
                         <a className="nav-link active" id="pills-home-tab-listfilm" data-toggle="pill" href="#pills-home-listfilm" role="tab" aria-controls="pills-home-listfilm" aria-selected="true">
                             On Showing
                         </a>
@@ -343,22 +347,13 @@ export default function ListFilm(props) {
             </div>
             <div className="tab-content" id="pills-tabContent-listfilm">
                 <div className="tab-pane fade show active" id="pills-home-listfilm" role="tabpanel" aria-labelledby="pills-home-tab-listfilm">
-                    {/* {  */}
-                        {renderFilmsTabpane("carouselFilmsTab1")} 
-                        {/* renderFilmNoAPI() */}
-                    {/* } */}
+                    {renderFilmsTabpane("carouselFilmsTab1")} 
                 </div>
                 <div className="tab-pane fade" id="pills-profile-listfilm" role="tabpanel" aria-labelledby="pills-profile-tab-listfilm">
-                    {/* {  */}
-                        {renderFilmsTabpane("carouselFilmsTab2")} 
-                         {/* renderFilmNoAPI() */}
-                    {/* } */}
+                    {renderFilmsTabpane("carouselFilmsTab2")} 
                 </div>
                 <div className="tab-pane fade" id="pills-contact-listfilm" role="tabpanel" aria-labelledby="pills-contact-tab-listfilm">
-                    {/* {  */}
-                        {renderFilmsTabpane("carouselFilmsTab3")} 
-                        {/*  renderFilmNoAPI() */}
-                    {/* } */}
+                    {renderFilmsTabpane("carouselFilmsTab3")} 
                 </div>
             </div>
         </div>

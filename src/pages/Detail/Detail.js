@@ -30,37 +30,37 @@ export default function Detail(props) {
                         <div className="row mb-3">
                             <div className="col-12">
                                 <h2 className="text-white mb-0">{thongTinChiTiet.tenPhim}</h2>
-                                <span>120 phút</span>
+                                <span>{thongTinChiTiet.thoiLuong} mins</span>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-4">Release date</div>
                             <div className="col-8">
-                                22-12-2020
+                                {thongTinChiTiet.ngayKhoiChieuFormat}
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-4">Director</div>
-                            <div className="col-8">Joe Russo</div>
+                            <div className="col-8">{thongTinChiTiet.daoDien}</div>
                         </div>
                         <div className="row">
                             <div className="col-4">Cast</div>
-                            <div className="col-8">Chris Evans, Robert Downey Jr.</div>
+                            <div className="col-8">{thongTinChiTiet.dienVien}</div>
                         </div>
                         <div className="row">
                             <div className="col-4">Content</div>
-                            <div className="col-8 text-justify">Nói chung là xem đi là thấy nó hấp dẫn cỡ nào</div>
+                            <div className="col-8 text-justify">{thongTinChiTiet.moTa}</div>
                         </div>
                         <div className="row">
                             <div className="col-4">Genre</div>
-                            <div className="col-8">Hành động/Viễn tưởng</div>
+                            <div className="col-8">{thongTinChiTiet.theLoai}</div>
                         </div>
                         <div className="row">
                             <div className="col-4">Format</div>
-                            <div className="col-8">2D/Digital</div>
+                            <div className="col-8">{thongTinChiTiet.format}</div>
                         </div>
                         <div className="voteDetail row mt-3">
-                            <div className="bd-voteDetail">10/10</div>
+                            <div className="bd-voteDetail">{thongTinChiTiet.danhGia}/10</div>
                         </div>
                         <div className="voteDetail row mt-2">
                             <div>
@@ -96,7 +96,7 @@ export default function Detail(props) {
                             <div className="tab-pane fade" id="pills-profile-detail" role="tabpanel" aria-labelledby="pills-profile-tab-detail">
                                 <div className="detail-reviews ml-4 mb-4">
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt fugiat consequuntur maiores ipsum nulla. Perferendis aliquid doloribus quisquam porro eum mollitia beatae fuga, necessitatibus provident ad delectus nihil eos. Eos.
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunts porro eum mollitia beatae fuga, necessitatibus provident ad delectus nihil eos. Eos.
                                     </p>
                                 </div>
                                 <div className="detail-reviews ml-4 mb-4">

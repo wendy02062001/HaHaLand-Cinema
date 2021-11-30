@@ -45,13 +45,19 @@ export default function Login(props) {
                 </div>
                 <div style={{ width:'240px', margin: '0 auto' }}>
                     <div className="social-Log mt-5">
-                        <img className="img-social-log" src="./img/login-facebook.png" alt="login" />
+                        <a href="https://fb.com/">
+                            <img className="img-social-log" src="./img/login-facebook.png" alt="login" />
+                        </a>
                     </div>
                     <div className="social-Log my-2">
-                        <img className="img-social-log" src="./img/login-zalo.png" alt="login" />
+                        <a href="https://zalo-chat-static.zadn.vn/">
+                            <img className="img-social-log" src="./img/login-zalo.png" alt="login" />
+                        </a>
                     </div>
                     <div className="social-Log">
-                        <img className="img-social-log" src="./img/login-google.png" alt="login" />
+                        <a href="https://accounts.google.com">
+                            <img className="img-social-log" src="./img/login-google.png" alt="login" />
+                        </a>
                     </div>
                 </div>
             </form>

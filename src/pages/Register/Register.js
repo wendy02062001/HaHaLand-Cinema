@@ -70,7 +70,7 @@ export default function Register(props) {
                         </div>
                         <div className="form-group">
                             <select name="maNhom" className="maNhom form-control" onChange={formik.handleChange}>
-                                <option value="0">Group Code Select</option>
+                                <option value="0">Group code select</option>
                                 <option value="GP01">Group 1</option>
                                 <option value="GP02">Group 2</option>
                                 <option value="GP03">Group 3</option>
@@ -84,13 +84,19 @@ export default function Register(props) {
                 </div>
                 <div style={{ width: '250px', margin: '0 auto' }}>
                     <div className="social-Log mt-5">
-                        <img className="img-social-log" src="./img/login-facebook.png" alt="login" />
+                        <a href="https://fb.com/">
+                            <img className="img-social-log" src="./img/login-facebook.png" alt="login" />
+                        </a>
                     </div>
                     <div className="social-Log my-2">
-                        <img className="img-social-log" src="./img/login-zalo.png" alt="login" />
+                        <a href="https://zalo-chat-static.zadn.vn/">
+                            <img className="img-social-log" src="./img/login-zalo.png" alt="login" />
+                        </a>
                     </div>
                     <div className="social-Log">
-                        <img className="img-social-log" src="./img/login-google.png" alt="login" />
+                        <a href="https://accounts.google.com">
+                            <img className="img-social-log" src="./img/login-google.png" alt="login" />
+                        </a>
                     </div>
                 </div>
             </form>

@@ -67,8 +67,9 @@
     background-color: white;
 }
 .detail-reviews{
-    background-color: #efa318;
-    color: white;
+    background-color: #f3d9aa;
+    color: black;
+    font-weight: 500;
     padding: 20px 30px;
     border-radius: 10px;
 }

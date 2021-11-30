@@ -36,7 +36,7 @@ export default function Checkout(props) {
     //     return <Redirect to='/login' />
     // }
     if (!userLogin.taiKhoan){
-        alert("Login please !!!");
+        alert("You have to login first !");
         return <Redirect to='/login' />
     }
 

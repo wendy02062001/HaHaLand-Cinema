@@ -9,6 +9,7 @@ import Register from './pages/Register/Register';
 import Checkout from './pages/Checkout/Checkout';
 import Menu from './pages/Menu/Menu';
 import Payment from './pages/Payment/Payment';
+import Search from './pages/Search/Search';
 
 // Thư viện giúp chuyển hướng trang
 import { createBrowserHistory} from 'history';
@@ -29,6 +30,7 @@ function App() {
         <HomeTemplate exact path="/checkout/:id" component={Checkout}/>
         <HomeTemplate exact path="/menu" component={Menu} />
         <HomeTemplate exact path="/payment" component={Payment} />
+        <HomeTemplate exact path="/timkiem/:id" component={Search}/>
         <HomeTemplate component={Homes} />
       </Switch>
     </Router>

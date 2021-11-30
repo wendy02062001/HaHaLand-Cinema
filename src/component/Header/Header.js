@@ -58,13 +58,13 @@ export default function Header(props){
                             </button>
                             {/* các chức năng của người dùng */}
                             <div className="dropdown-menu">
-                                <button type="button" className="dropdown-item btn-user-event" onClick={()=>{
+                                {/* <button type="button" className="dropdown-item btn-user-event" onClick={()=>{
                                     history.replace(`/useraccount/${userLogin.taiKhoan}`)
-                                }} >Information</button>
+                                }} >Information</button> */}
                                 {/* nếu user là admin thì hiển thị thêm chức năng đi tới trang admin */}
-                                {(userLogin.maLoaiNguoiDung === "QuanTri") ? <button type="button" className="dropdown-item btn-user-event" onClick={()=>{
+                                {/* {(userLogin.maLoaiNguoiDung === "QuanTri") ? <button type="button" className="dropdown-item btn-user-event" onClick={()=>{
                                     history.replace('/admin');
-                                }}>Go to Admin Page</button> : ''}
+                                }}>Go to Admin Page</button> : ''} */}
                                 {/* thực hiện chức năng đăng xuất */}
                                 <button type="button" className="dropdown-item btn-user-event" onClick={()=>{
                                     localStorage.clear();
