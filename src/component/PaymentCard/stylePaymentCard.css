@@ -1,8 +1,9 @@
 /* CSS FORM LOGIN/REGISTER */
-.formLog{
+.formPayment{
     height: 600px;
-    color: white;
-    background-color: rgba(50, 51, 54, 0.562);
+    color: black;
+    /* background-color: rgba(146, 1, 1, 0.329); */
+    background-color: rgba(255, 166, 0, 0.726);
     padding: 30px 20px;
     text-align: center;
     border-radius: 20px;

@@ -37,14 +37,14 @@ export default function Login(props) {
                 <div className="form-group">
                     <input type="password" className="form-control" name="matKhau" placeholder="Password" onChange={formik.handleChange} />
                 </div>
-                <div className="form-group mt-5">
+                <div className="form-group mt-4">
                     <button className="btnLog mr-2">Log in</button>
                     <button type="button" className="btnLog mr-2" onClick={()=>{
                         history.replace('/register');
                     }}>Register</button>
                 </div>
                 <div style={{ width:'240px', margin: '0 auto' }}>
-                    <div className="social-Log mt-5">
+                    <div className="social-Log mt-4">
                         <a href="https://fb.com/">
                             <img className="img-social-log" src="./img/login-facebook.png" alt="login" />
                         </a>

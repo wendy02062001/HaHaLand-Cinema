@@ -29,7 +29,7 @@ function App() {
         <UserTemplate exact path="/register" component={Register} />
         <HomeTemplate exact path="/checkout/:id" component={Checkout}/>
         <HomeTemplate exact path="/menu" component={Menu} />
-        <HomeTemplate exact path="/payment" component={Payment} />
+        <HomeTemplate exact path="/payment/:id" component={Payment} />
         <HomeTemplate exact path="/timkiem/:id" component={Search}/>
         <HomeTemplate component={Homes} />
       </Switch>

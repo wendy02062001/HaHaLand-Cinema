@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { NavLink } from 'react-router-dom';
 import { layChiTietPhongVe } from '../../action/FilmAction';
 // su dung thu vien lodash
 import _ from 'lodash';
@@ -131,6 +132,7 @@ export default function Checkout(props) {
                         <p>Phone number: <span className="checkout-text-info">{userLogin.soDt}</span></p>
                     </div>
                     <hr />
+                    {/* <NavLink exact to ='/payment' style={{width: '100%'}} className="btn btn-danger">PAYMENT</NavLink> */}
                     <div className="checkout-button-buy" onClick={() => {
                         for (var item of danhSachGheDangDat) {
                             for (var chair of chiTietPhongVe.danhSachGhe){
@@ -145,7 +147,10 @@ export default function Checkout(props) {
                             'maLichChieu': chiTietPhongVe.thongTinPhim.maLichChieu,
                             'danhSachGhe': chiTietPhongVe.danhSachGhe
                         }
-                        dispatch(datVeAction(thongTinDatVe));
+                        if (danhSachGheDangDat.length > 0){
+                            dispatch(datVeAction(thongTinDatVe));
+                            history.replace(`/payment/${props.match.params.id}`);
+                        }else alert('You have to choose seat !!!');
                     }}>
                         <div className="display-5 py-2" >BOOK TICKET</div>
                     </div>

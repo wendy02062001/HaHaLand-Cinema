@@ -80,10 +80,10 @@ export default function Register(props) {
                     </div>
                 </div>
                 <div className="form-group">
-                    <button type="submit" className="btnLog mt-4">Register</button>
+                    <button type="submit" className="btnLog mt-2">Register</button>
                 </div>
                 <div style={{ width: '250px', margin: '0 auto' }}>
-                    <div className="social-Log mt-5">
+                    <div className="social-Log mt-2">
                         <a href="https://fb.com/">
                             <img className="img-social-log" src="./img/login-facebook.png" alt="login" />
                         </a>

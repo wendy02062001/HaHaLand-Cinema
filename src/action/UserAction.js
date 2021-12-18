@@ -55,7 +55,8 @@ export const dangNhapAction = (thongTinDangNhap) => {
             // luu du lieu vao LocalStorage
             localStorage.setItem(ACCESSTOKEN, result.data.ID);
             // dong thoi quay lai trang truoc do
-            history.push('/'); 
+            history.goBack();
+            // history.push('/'); 
 
         } catch (err) {
             alert( "Lỗi: Tài Khoản hoặc Mật Khẩu không đúng",err.response?.data)
@@ -106,7 +107,6 @@ export const layThongTinAction = (taiKhoan)=>{
             })
 
         }catch (err){
-            
             alert(err.response?.data);
         }
     }
